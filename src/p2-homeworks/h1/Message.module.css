@@ -1,0 +1,42 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+}
+.img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.wrapper {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 20px;
+}
+.wrapper:before {
+    content:"";
+    position: absolute;
+    clip-path: polygon(100% 22%, 100% 99%, 0% 99%, 22% 92%, 41% 84%, 58% 74%, 72% 64%, 86% 50%, 96% 38%);
+    background-color: #fff;
+    bottom: 0;
+    left: -15px;
+    width: 20px;
+    height: 30px;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498DB;
+
+}
+.message {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+.time {
+    display: flex;
+    justify-content: flex-end;
+    color: #FF5733;
+}
